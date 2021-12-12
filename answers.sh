@@ -19,3 +19,10 @@ problem 1:"CREATE TABLE work AS
    WHERE employees.Company = companies.Name;"
 problem 2:"select Name from work WHERE Date<2000;" 
 problem 3:"select name from employees where Role='Graphic Designer'"
+
+count & filter :
+problem 1:"SELECT * FROM `students` WHERE Points=(select max(Points) from students)"
+problem 2:"SELECT AVG(points) from students"
+problem 3:"SELECT COUNT(name) FROM students WHERE Points = 500"
+problem 4:"SELECT Name FROM students WHERE Name LIKE '%s%'"
+problem 5:"SELECT * FROM students ORDER by  Points DESC"
