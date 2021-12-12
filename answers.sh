@@ -11,3 +11,11 @@ Creating table:
 problem 1:"INSERT INTO graduates (ID,Name,Age,Gender,Points) SELECT * FROM students where name = 'Layal'"
 problem 2:"UPDATE graduates SET Graduation='5/6/2020'"
 problem 3:"DELETE FROM students WHERE name='Layal'"
+
+joins :
+problem 1:"CREATE TABLE work AS
+   SELECT employees.Name, companies.Name, companies.Date
+   FROM employees, companies
+   WHERE employees.Company = companies.Name;"
+problem 2:"select Name from work WHERE Date<2000;" 
+problem 3:"select name from employees where Role='Graphic Designer'"
