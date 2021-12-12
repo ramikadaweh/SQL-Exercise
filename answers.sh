@@ -5,3 +5,9 @@ problem 4:"select Points from students where name='Alex'"
 problem 5:"insert into students(name,age,gender,points) values('Rami','24','M','450')"
 problem 6:"update students set points=400 where name='Basma'"
 problem 7:"update students set points=100 where name='Alex'"
+
+Creating table:
+"CREATE TABLE graduates(ID INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,Name TEXT NOT NULL UNIQUE,Age INTEGER,Gender TEXT,Points INTEGER,Graduation TEXT)"
+problem 1:"INSERT INTO graduates (ID,Name,Age,Gender,Points) SELECT * FROM students where name = 'Layal'"
+problem 2:"UPDATE graduates SET Graduation='5/6/2020'"
+problem 3:"DELETE FROM students WHERE name='Layal'"
